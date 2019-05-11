@@ -1,0 +1,5 @@
+[user]
+	name = max
+	email = serpstyle@mail.ru
+[url "https://"]
+	insteadOf = git://

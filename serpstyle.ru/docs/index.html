@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>MySite</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- ---------------------Подключаем Bootstrap--------------------------------->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
+	<!-- ---------------------Подключаем Jquery------------------------------------>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- ---------------------Подключаем различные слайдеры изображения------------>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+	<!-- ---------------------Подключаем Разные иконки----------------------------->
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	
+	<!------------------------Подключаем собственный css--------------------------->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!------------------------CSS slider--------------------------->	
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+ 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  	
+	<!------------------------SCRIPTS--------------------------->
+  	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  	<script src="slick/slick.min.js"></script>
+  	<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  	<script src="js/script.js" type="text/javascript"></script>
+  	<script src="js/script2.js" type="text/javascript"></script>
+	
+	<!-----------------------ICON---------------------------------->
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/site.webmanifest">
+	<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	
+</head>
+<body>
+
+<!------------------------------НАВИГАЦИЯ САЙТА------------------------------------------->	
+		
+		<section class="container">
+			<div id="nav-wrapper">
+				<input type="checkbox" id="menu-checkbox" />
+				<nav role="navigation">
+					<label for="menu-checkbox" class="toggle-button" data-open="" data-close=" " onclick></label>
+					<ul class="main-menu">
+	        			<li><a href="#razdel1">Услуги</a></li>
+	        			<li><a href="#razdel2">Портфолио</a></li>
+	        			<li><a href="#cover">Стоимость</a></li>
+        			</ul>
+				</nav>
+				<div class="phone"><span class="i"></span><a href="skype:+74999955555?call">+7 (111) 111-11-11</a></div>
+				<a href="#" class="callme__button" title="Заказать звонок" onclick="openForm()">Заказать звонок</a>
+			</div>
+		</section>
+<!------------------------------ШАПКА САЙТА---------------------------------------------->
+		
+		<section class="container">
+			<div id="header-wrapper">
+				<div class="header-wrapper__namedescription">
+					<div class="header-wrapper__rotates">
+						<p class="rotate5">{}</p>
+						<p class="rotate6">#</p>
+					</div>
+					<h1 class="header-wrapper__namedescription_name">Максим Серяпин</h1>
+					<div>
+					<p class="header-wrapper__namedescription_descrip">
+						Frontend-разработчик и веб-верстальщик
+					</p>
+					</div>
+					<div class="header-wrapper__namedescription_button-center">	
+						<a href="#" class="callme_button2" onclick="openForm()">Узнать больше</a>
+					</div>
+					<div class="header-wrapper__rotates2">
+						<p class="rotate8">div</p>
+						<p class="rotate7">id</p>
+					</div>
+				</div>
+				<div class="header-wrapper__man">
+					<img src="img/man7.png" alt="Здесь фото" id="img">
+				</div>
+			</div>
+		</section>
+
+<!------------------------------1 БЛОК---------------------------------------------------->	
+		
+		<section class="container">
+				<h1 id="razdel1" class="header-title">Что я делаю</h1>
+			<div class="work-wrapper">
+				<a href="#" class="link">
+					<div class="work-wrapper__work">
+						<div class="work-wrapper__work-photo">
+							<img src="img/1.png" alt="Photo1">
+						</div>
+						<div><p>Верстка лендинг-страниц <br> и сайтов любой сложности </p></div>
+					</div>
+				</a>
+				<a href="#" class="link">
+					<div class="work-wrapper__work">
+						<div class="work-wrapper__work-photo">
+							<img src="img/2.png" alt="Photo1">
+						</div>
+						<div><p>Адаптивная верстка под все <br> браузеры и устройства </p></div>
+					</div>
+				</a>
+				<a href="#" class="link">
+					<div class="work-wrapper__work">
+						<div class="work-wrapper__work-photo">
+							<img src="img/3.png" alt="Photo1">
+						</div>
+						<div><p>Frontend-разработка <br> и программирование</p></div>
+					</div>
+				</a>
+				<a href="#" class="link">
+					<div class="work-wrapper__work">
+						<div class="work-wrapper__work-photo">
+							<img src="img/4.png" alt="Photo1">
+						</div>
+						<div><p>Исправление и доработка <br>существующей верстки</p></div>
+					</div>
+				</a>
+			</div>
+			<div class="button-form">	
+				<a href="#" class="button-form__callme_button2" onclick="openForm()">Узнать стоимость</a>
+			</div>
+		</section>
+	
+<!------------------------------2 БЛОК---------------------------------------------------->	
+
+		<section>
+			<h1 id="razdel2" class="header-title">Примеры моих работ</h1>
+			<div class="examples-wrapper">
+				<div class="examples-wrapper__multiple-items" data-slick='{"dots": true}'>
+					<div class="examples-wrapper__multiple-items_text"><img src="img/Layer1.png" alt="" class="slidephoto"/>Сайт магазина детской одежды</div>
+					<div class="examples-wrapper__multiple-items_text"><img src="img/Layer2.png" alt="" class="slidephoto"/>Сайт психолога Веры Антоновой</div>
+					<div class="examples-wrapper__multiple-items_text"><img src="img/Layer3.png" alt="" class="slidephoto"/>Сайт магазина "Рыболов"</div>
+					<div class="examples-wrapper__multiple-items_text"><img src="img/Layer1.png" alt="" class="slidephoto"/>Сайт магазина детской одежды</div>
+					<div class="examples-wrapper__multiple-items_text"><img src="img/Layer2.png" alt="" class="slidephoto"/>Сайт психолога Веры Антоновой</div>
+					<div class="examples-wrapper__multiple-items_text"><img src="img/Layer3.png" alt="" class="slidephoto"/>Сайт магазина "Рыболов"</div>
+				</div>
+			</div>
+			<div class="button-form">	
+				<a href="#" class="button-form__callme_button2" onclick="openForm()">Заказать проект</a>
+			</div>
+		</section>	
+
+<!------------------------------3 БЛОК---------------------------------------------------->	
+		<section class="container">
+			<div id="cover">
+				<div class="cover__rotates">
+					<p class="rotate1">{}</p>
+					<p class="rotate3">#</p>	
+				</div>
+				<div class="cover__text">Адаптивная верстка под все устройства</br>
+					и браузеры от 1000 рублей всего за 4 часа.*</br>
+					<p>*Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально</br>
+					в зависимости от сложности задач.</p>
+				</div>
+				<div  class="cover__rotates">
+					<p class="rotate2">id</p>
+				</div>
+			</div>
+		</section>
+	
+<!------------------------------4 БЛОК (FOOTER)-------------------------------------------->	
+		
+		<section class="container">
+			<div class="footer-wrapper">
+				<div class="footer-wrapper__nav4">
+					<div class="footer-wrapper__nav4_left">
+						<nav class="footer-wrapper__nav4_left_nav2">
+							<a href="#">Услуги</a>
+							<a href="#">Портфолио</a>
+							<a href="#">Стоимость</a>
+						</nav>
+					</div>
+				</div>
+				<div class="footer-wrapper__nav4">
+					<div class="footer-wrapper__nav4_left">
+						<nav class="footer-wrapper__nav4_left_nav2">
+							<a href="skype:+74999955555?call">&#9990;  +7 (499) 995-55-55</a>
+							<a href="mailto:info@agency.ru ?subject=Письмо от посетителя сайта &Body">&#9993;  info@agency.ru</a>
+						</nav>
+					</div>	
+				</div>
+				<div class="footer-wrapper__nav4">
+					<a href="#" class="footer-wrapper__nav4_callme__button" title="Заказать звонок" onclick="openForm()">Заказать звонок</a>
+		
+		<!-----------------CПРАЙТ иконок2---------------------------------------------------------->
+					
+					<ul id="footer-wrapper__nav4_navlist">
+  						<a href="http://whatsapp.com" class="footer-wrapper__nav4_navlist_icon-whatsapp"></a>
+  						<a href="http://vk.com" class="footer-wrapper__nav4_navlist_icon-vk"></a>
+  						<a href="http://instagram.com/doyou_like" class="footer-wrapper__nav4_navlist_icon-instagram"></a>
+					</ul>
+				</div>
+			</div>		
+		</section>
+	
+<!------------------------------4 БЛОК (FOOTER2)------------------------------------------->
+		
+		<section class="container" id="footer2">		
+			
+				<small>
+					&copy Максим Серяпин 2019
+				</small>
+				
+		</section>
+
+
+<!--------------------Pop forms------------------------------->
+
+<div class="form-popup" id="myForm">
+  <form action="#" class="form-container">
+    <h3>Мы перезвоним</h3>
+
+    <label for="NameForm"><b>Имя</b></label>
+    <input type="text" id="NameForm" placeholder="Ваше имя" name="name" required>
+    
+    <label for="PhoneForm"><b>Ваш телефон</b></label>
+    <input type="text" id="PhoneForm" placeholder="Ваш телефон" name="email" required>
+
+    <button type="submit" class="btn">Отправить</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+  </form>
+</div>
+
+
+
+	</body>
+</html>
